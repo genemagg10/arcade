@@ -18,13 +18,13 @@ const games = [
     title: "FrostByte",
     creator: "Gene",
     url: "https://genemagg10.github.io/skifree/",
-    image: "./assets/frostbyte-thumb.svg",
+    image: "./assets/frostbyte.png",
   },
   {
     title: "Cutie Racers",
     creator: "Ella",
     url: "https://genemagg10.github.io/CutieRacers/",
-    image: "./assets/cutieracers-thumb.svg",
+    image: "./assets/cutieracers.png",
   },
 ];
 
