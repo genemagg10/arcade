@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a2e"/>
+      <stop offset="60%" style="stop-color:#1a1a4e"/>
+      <stop offset="100%" style="stop-color:#f0f0ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#sky)"/>
+  <!-- Mountains -->
+  <polygon points="0,220 80,140 160,220" fill="#2a2a5e"/>
+  <polygon points="100,220 200,120 300,220" fill="#3a3a6e"/>
+  <polygon points="220,220 320,150 400,220" fill="#2a2a5e"/>
+  <!-- Snow -->
+  <rect x="0" y="220" width="400" height="80" fill="#e8e8ff"/>
+  <!-- Trees -->
+  <polygon points="60,180 70,220 50,220" fill="#1a4a2a"/>
+  <polygon points="160,190 170,220 150,220" fill="#1a5a2a"/>
+  <polygon points="300,185 310,220 290,220" fill="#1a4a2a"/>
+  <polygon points="340,175 350,220 330,220" fill="#1a5a2a"/>
+  <!-- Skier -->
+  <circle cx="200" cy="210" r="4" fill="#ff4444"/>
+  <line x1="200" y1="214" x2="200" y2="226" stroke="#ff4444" stroke-width="2"/>
+  <line x1="200" y1="226" x2="195" y2="234" stroke="#ff4444" stroke-width="2"/>
+  <line x1="200" y1="226" x2="205" y2="234" stroke="#ff4444" stroke-width="2"/>
+  <line x1="190" y1="234" x2="210" y2="234" stroke="#666" stroke-width="1.5"/>
+  <!-- Snowflakes -->
+  <circle cx="50" cy="60" r="2" fill="white" opacity="0.8"/>
+  <circle cx="150" cy="40" r="2" fill="white" opacity="0.6"/>
+  <circle cx="250" cy="80" r="2" fill="white" opacity="0.7"/>
+  <circle cx="350" cy="50" r="2" fill="white" opacity="0.8"/>
+  <circle cx="100" cy="100" r="1.5" fill="white" opacity="0.5"/>
+  <circle cx="300" cy="30" r="1.5" fill="white" opacity="0.6"/>
+  <!-- Title -->
+  <text x="200" y="280" text-anchor="middle" font-family="monospace" font-size="18" font-weight="bold" fill="#00eeff" style="text-shadow: 0 0 10px #00eeff">FROSTBYTE</text>
+</svg>

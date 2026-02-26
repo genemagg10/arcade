@@ -1,0 +1,240 @@
+/* ============================================
+   MAGGIO FAMILY ARCADE — 80s Retro Theme
+   ============================================ */
+
+/* --- Reset & Base --- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --neon-cyan: #00eeff;
+  --neon-magenta: #ff00ff;
+  --neon-pink: #ff2d95;
+  --neon-lime: #39ff14;
+  --neon-yellow: #ffe600;
+  --bg-dark: #0a0a1a;
+  --bg-card: #141428;
+  --text-dim: #8888aa;
+  --font-pixel: 'Press Start 2P', monospace;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-pixel);
+  background-color: var(--bg-dark);
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* --- CRT Scanline Overlay --- */
+.crt-overlay {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 2px,
+    rgba(0, 0, 0, 0.15) 2px,
+    rgba(0, 0, 0, 0.15) 4px
+  );
+}
+
+/* --- Header --- */
+header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+.neon-title {
+  font-size: clamp(1.2rem, 4vw, 2.5rem);
+  color: var(--neon-cyan);
+  text-shadow:
+    0 0 7px var(--neon-cyan),
+    0 0 20px var(--neon-cyan),
+    0 0 42px var(--neon-cyan),
+    0 0 82px var(--neon-magenta),
+    0 0 120px var(--neon-magenta);
+  letter-spacing: 0.05em;
+  animation: flicker 4s infinite alternate;
+}
+
+.subtitle {
+  margin-top: 1rem;
+  font-size: clamp(0.5rem, 1.8vw, 0.75rem);
+  color: var(--text-dim);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* --- Neon Flicker Animation --- */
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow:
+      0 0 7px var(--neon-cyan),
+      0 0 20px var(--neon-cyan),
+      0 0 42px var(--neon-cyan),
+      0 0 82px var(--neon-magenta),
+      0 0 120px var(--neon-magenta);
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+    opacity: 0.85;
+  }
+}
+
+/* --- Game Gallery --- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+/* --- Arcade Cabinet Card --- */
+.game-card {
+  background: var(--bg-card);
+  border: 2px solid #222244;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-card:hover,
+.game-card:focus-visible {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 12px var(--neon-cyan),
+    0 0 30px var(--neon-magenta),
+    0 0 60px rgba(255, 0, 255, 0.3);
+  border-color: var(--neon-cyan);
+  outline: none;
+}
+
+/* --- Screen (Thumbnail) --- */
+.game-card__screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #000;
+  border-bottom: 3px solid var(--neon-magenta);
+}
+
+.game-card__screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+.game-card:hover .game-card__screen img {
+  filter: brightness(1.15) saturate(1.2);
+}
+
+/* Screen bezel corners */
+.game-card__screen::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border: 2px solid rgba(0, 238, 255, 0.15);
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* --- Card Info --- */
+.game-card__info {
+  padding: 1rem 1rem 1.2rem;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.game-card__title {
+  font-size: clamp(0.65rem, 2vw, 0.85rem);
+  color: var(--neon-yellow);
+  text-shadow: 0 0 8px rgba(255, 230, 0, 0.5);
+  letter-spacing: 0.05em;
+}
+
+.game-card__creator {
+  font-size: clamp(0.45rem, 1.2vw, 0.6rem);
+  color: var(--neon-lime);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 2rem 1rem 3rem;
+}
+
+.insert-coin {
+  font-size: clamp(0.7rem, 2.5vw, 1rem);
+  color: var(--neon-pink);
+  text-shadow:
+    0 0 7px var(--neon-pink),
+    0 0 20px var(--neon-pink),
+    0 0 40px var(--neon-pink);
+  animation: blink 1.2s step-end infinite;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.footer-text {
+  font-size: 0.45rem;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+}
+
+/* --- Responsive --- */
+@media (max-width: 640px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    padding: 1.5rem 1rem 3rem;
+    gap: 1.5rem;
+  }
+
+  header {
+    padding: 2rem 1rem 1.5rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
