@@ -32,6 +32,12 @@ const games = [
     url: "https://genemagg10.github.io/adventure-game/",
     image: "./assets/ingoizers-world-thumb.svg",
   },
+  {
+    title: "Pelada Legends",
+    creator: "Gene",
+    url: "https://genemagg10.github.io/pelada-legends/",
+    image: "./assets/pelada-legends-thumb.svg",
+  },
 ];
 
 // ---- Renderer ----
