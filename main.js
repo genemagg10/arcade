@@ -26,6 +26,12 @@ const games = [
     url: "https://genemagg10.github.io/CutieRacers/",
     image: "./assets/cutieracers-thumb.svg",
   },
+  {
+    title: "Ingoizer's World",
+    creator: "Luca",
+    url: "https://genemagg10.github.io/adventure-game/",
+    image: "./assets/ingoizers-world-thumb.svg",
+  },
 ];
 
 // ---- Renderer ----
