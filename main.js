@@ -17,7 +17,7 @@ const games = [
   {
     title: "FrostByte",
     creator: "Gene",
-    url: "https://genemagg10.github.io/skifree/",
+    url: "https://genemagg10.github.io/frostbyte/",
     image: "./assets/frostbyte.png",
   },
   {
