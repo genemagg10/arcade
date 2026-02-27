@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35"/>
+      <stop offset="40%" style="stop-color:#ff8c42"/>
+      <stop offset="100%" style="stop-color:#ffd166"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#sky)"/>
+  <!-- Sun -->
+  <circle cx="320" cy="50" r="30" fill="#fff4a3" opacity="0.9"/>
+  <!-- Favela buildings - back row -->
+  <rect x="10" y="80" width="45" height="100" fill="#d45d3a"/>
+  <rect x="50" y="70" width="40" height="110" fill="#e8a44a"/>
+  <rect x="85" y="90" width="50" height="90" fill="#c94c4c"/>
+  <rect x="130" y="75" width="35" height="105" fill="#4aad8b"/>
+  <rect x="160" y="85" width="45" height="95" fill="#d4883a"/>
+  <rect x="260" y="70" width="40" height="110" fill="#e8a44a"/>
+  <rect x="295" y="80" width="50" height="100" fill="#4aad8b"/>
+  <rect x="340" y="75" width="35" height="105" fill="#c94c4c"/>
+  <rect x="370" y="85" width="35" height="95" fill="#d45d3a"/>
+  <!-- Windows - back row -->
+  <rect x="18" y="92" width="8" height="8" fill="#ffee88" opacity="0.7"/>
+  <rect x="35" y="105" width="8" height="8" fill="#ffee88" opacity="0.7"/>
+  <rect x="58" y="82" width="8" height="8" fill="#ffee88" opacity="0.7"/>
+  <rect x="72" y="100" width="8" height="8" fill="#ffee88" opacity="0.7"/>
+  <rect x="96" y="102" width="8" height="8" fill="#ffee88" opacity="0.7"/>
+  <rect x="115" y="115" width="8" height="8" fill="#ffee88" opacity="0.7"/>
+  <rect x="138" y="88" width="8" height="8" fill="#ffee88" opacity="0.7"/>
+  <rect x="170" y="98" width="8" height="8" fill="#ffee88" opacity="0.7"/>
+  <rect x="268" y="82" width="8" height="8" fill="#ffee88" opacity="0.7"/>
+  <rect x="308" y="95" width="8" height="8" fill="#ffee88" opacity="0.7"/>
+  <rect x="348" y="88" width="8" height="8" fill="#ffee88" opacity="0.7"/>
+  <rect x="380" y="100" width="8" height="8" fill="#ffee88" opacity="0.7"/>
+  <!-- Court ground -->
+  <rect x="0" y="180" width="400" height="120" fill="#a8a060"/>
+  <rect x="30" y="185" width="340" height="105" fill="#7a9a5a"/>
+  <!-- Center line & circle -->
+  <line x1="200" y1="185" x2="200" y2="290" stroke="white" stroke-width="2" opacity="0.6"/>
+  <circle cx="200" cy="237" r="20" fill="none" stroke="white" stroke-width="2" opacity="0.6"/>
+  <!-- Goals -->
+  <rect x="30" y="215" width="8" height="45" fill="white" opacity="0.5"/>
+  <rect x="362" y="215" width="8" height="45" fill="white" opacity="0.5"/>
+  <!-- Player 1 (yellow jersey) -->
+  <circle cx="150" cy="230" r="6" fill="#ffcc00"/>
+  <line x1="150" y1="236" x2="150" y2="252" stroke="#ffcc00" stroke-width="2"/>
+  <line x1="150" y1="252" x2="145" y2="262" stroke="#333" stroke-width="2"/>
+  <line x1="150" y1="252" x2="155" y2="262" stroke="#333" stroke-width="2"/>
+  <!-- Player 2 (blue jersey) -->
+  <circle cx="240" cy="235" r="6" fill="#2266cc"/>
+  <line x1="240" y1="241" x2="240" y2="257" stroke="#2266cc" stroke-width="2"/>
+  <line x1="240" y1="257" x2="235" y2="267" stroke="#333" stroke-width="2"/>
+  <line x1="240" y1="257" x2="245" y2="267" stroke="#333" stroke-width="2"/>
+  <!-- Soccer ball -->
+  <circle cx="170" cy="248" r="5" fill="white"/>
+  <circle cx="170" cy="248" r="5" fill="none" stroke="#333" stroke-width="0.5"/>
+  <path d="M168,245 L172,245 L173,248 L170,250 L167,248 Z" fill="#333" opacity="0.4"/>
+  <!-- Title -->
+  <text x="200" y="288" text-anchor="middle" font-family="monospace" font-size="15" font-weight="bold" fill="#ffcc00" style="text-shadow: 0 0 10px #ffcc00">PELADA LEGENDS</text>
+</svg>
