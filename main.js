@@ -15,6 +15,18 @@
 
 const games = [
   {
+    title: "Ingoizer's World",
+    creator: "Luca",
+    url: "https://genemagg10.github.io/adventure-game/",
+    image: "./assets/ingoizers-world-thumb.svg",
+  },
+  {
+    title: "Claw Machine Cuties",
+    creator: "Ella",
+    url: "https://genemagg10.github.io/claw-machine-cuties/",
+    image: "./assets/claw-machine-cuties-thumb.svg",
+  },
+  {
     title: "FrostByte",
     creator: "Gene",
     url: "https://genemagg10.github.io/frostbyte/",
@@ -27,22 +39,10 @@ const games = [
     image: "./assets/cutieracers.png",
   },
   {
-    title: "Ingoizer's World",
-    creator: "Luca",
-    url: "https://genemagg10.github.io/adventure-game/",
-    image: "./assets/ingoizers-world-thumb.svg",
-  },
-  {
     title: "Pelada Legends",
     creator: "Gene",
     url: "https://genemagg10.github.io/pelada-legends/",
     image: "./assets/pelada-legends-thumb.svg",
-  },
-  {
-    title: "Claw Machine Cuties",
-    creator: "Ella",
-    url: "https://genemagg10.github.io/claw-machine-cuties/",
-    image: "./assets/claw-machine-cuties-thumb.svg",
   },
 ];
 
