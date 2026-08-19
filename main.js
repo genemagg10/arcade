@@ -38,6 +38,12 @@ const games = [
     url: "https://genemagg10.github.io/pelada-legends/",
     image: "./assets/pelada-legends-thumb.svg",
   },
+  {
+    title: "Claw Machine Cuties",
+    creator: "Ella",
+    url: "https://genemagg10.github.io/claw-machine-cuties/",
+    image: "./assets/claw-machine-cuties-thumb.svg",
+  },
 ];
 
 // ---- Renderer ----
