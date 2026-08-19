@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="-10%" r="120%">
+      <stop offset="0%" stop-color="#fff3fb"/>
+      <stop offset="30%" stop-color="#ffdff2"/>
+      <stop offset="60%" stop-color="#ffc9ea"/>
+      <stop offset="100%" stop-color="#e9c6ff"/>
+    </radialGradient>
+    <linearGradient id="body" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff9ec9"/>
+      <stop offset="55%" stop-color="#ff87b8"/>
+      <stop offset="100%" stop-color="#e4568f"/>
+    </linearGradient>
+    <linearGradient id="marquee" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff5c9d"/>
+      <stop offset="100%" stop-color="#e0287f"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffe4f2"/>
+      <stop offset="100%" stop-color="#fff2f9"/>
+    </linearGradient>
+    <clipPath id="chuteClip"><rect x="216" y="236" width="72" height="32" rx="9"/></clipPath>
+  </defs>
+
+  <!-- dreamy arcade backdrop -->
+  <rect width="400" height="300" fill="url(#sky)"/>
+
+  <!-- perspective floor -->
+  <polygon points="200,242 -40,300 40,300" fill="#ffc0e4" opacity="0.5"/>
+  <polygon points="200,242 120,300 200,300" fill="#ffc0e4" opacity="0.5"/>
+  <polygon points="200,242 280,300 360,300" fill="#ffc0e4" opacity="0.5"/>
+  <polygon points="200,242 440,300 520,300" fill="#ffc0e4" opacity="0.5"/>
+  <rect x="0" y="240" width="400" height="60" fill="#ffd9f0" opacity="0.25"/>
+
+  <!-- background sparkles -->
+  <path d="M40,60 Q40,72 28,72 Q40,72 40,84 Q40,72 52,72 Q40,72 40,60 Z" fill="#ffffff" opacity="0.8"/>
+  <path d="M356,96 Q356,105 347,105 Q356,105 356,114 Q356,105 365,105 Q356,105 356,96 Z" fill="#fff0a0" opacity="0.85"/>
+  <path d="M62,180 Q62,187 55,187 Q62,187 62,194 Q62,187 69,187 Q62,187 62,180 Z" fill="#ffffff" opacity="0.7"/>
+  <path d="M340,196 Q340,204 332,204 Q340,204 340,212 Q340,204 348,204 Q340,204 340,196 Z" fill="#ffffff" opacity="0.65"/>
+  <path d="M30,214 Q30,220 24,220 Q30,220 30,226 Q30,220 36,220 Q30,220 30,214 Z" fill="#ffd447" opacity="0.75"/>
+  <path d="M372,44 Q372,51 365,51 Q372,51 372,58 Q372,51 379,51 Q372,51 372,44 Z" fill="#ffffff" opacity="0.7"/>
+  <!-- floating hearts -->
+  <path d="M52,118 a5,5 0 0 1 9,-3 a5,5 0 0 1 9,3 q0,7 -9,13 q-9,-6 -9,-13 Z" fill="#ff9ec9" opacity="0.55"/>
+  <path d="M330,150 a4,4 0 0 1 7,-2.5 a4,4 0 0 1 7,2.5 q0,5.5 -7,10 q-7,-4.5 -7,-10 Z" fill="#c9a4ff" opacity="0.6"/>
+
+  <!-- cabinet shadow -->
+  <ellipse cx="200" cy="284" rx="126" ry="11" fill="#d13c85" opacity="0.18"/>
+
+  <!-- cabinet body -->
+  <rect x="86" y="26" width="228" height="256" rx="22" fill="url(#body)"/>
+
+  <!-- marquee -->
+  <rect x="86" y="26" width="228" height="60" rx="20" fill="url(#marquee)"/>
+  <rect x="86" y="80" width="228" height="6" fill="#ffd9ec" opacity="0.5"/>
+  <!-- marquee bulbs -->
+  <circle cx="106" cy="37" r="3.5" fill="#fff6bd"/>
+  <circle cx="130" cy="37" r="3.5" fill="#ffd447"/>
+  <circle cx="154" cy="37" r="3.5" fill="#fff6bd"/>
+  <circle cx="178" cy="37" r="3.5" fill="#ffd447"/>
+  <circle cx="202" cy="37" r="3.5" fill="#fff6bd"/>
+  <circle cx="226" cy="37" r="3.5" fill="#ffd447"/>
+  <circle cx="250" cy="37" r="3.5" fill="#fff6bd"/>
+  <circle cx="274" cy="37" r="3.5" fill="#ffd447"/>
+  <circle cx="294" cy="37" r="3.5" fill="#fff6bd"/>
+  <!-- marquee title -->
+  <g font-family="ui-rounded,'Baloo 2',Nunito,'Comic Sans MS',system-ui,sans-serif" font-weight="900" text-anchor="middle" letter-spacing="1">
+    <text x="200" y="61" font-size="19" fill="#a3175c" opacity="0.55">CLAW MACHINE</text>
+    <text x="200" y="59" font-size="19" fill="#ffffff">CLAW MACHINE</text>
+    <text x="200" y="83" font-size="21" fill="#a3175c" opacity="0.55">CUTIES</text>
+    <text x="200" y="81" font-size="21" fill="#fff0a0">CUTIES</text>
+  </g>
+
+  <!-- glass case -->
+  <rect x="100" y="96" width="200" height="126" rx="14" fill="url(#glass)"/>
+
+  <!-- pile floor inside the case -->
+  <rect x="104" y="204" width="192" height="14" rx="7" fill="#ffd0e8" opacity="0.75"/>
+
+  <!-- plushies: back of the pit -->
+  <g transform="translate(163,176) scale(0.58)">
+    <circle cx="-13" cy="-14" r="7.5" fill="#ffd3d8"/><circle cx="13" cy="-14" r="7.5" fill="#ffd3d8"/>
+    <circle cx="-13" cy="-14" r="3.6" fill="#fff0f2"/><circle cx="13" cy="-14" r="3.6" fill="#fff0f2"/>
+    <circle cx="0" cy="0" r="18" fill="#ffd3d8"/>
+    <ellipse cx="0" cy="6.5" rx="9.5" ry="7" fill="#fff0f2"/>
+    <circle cx="-6.5" cy="-2" r="2.3" fill="#5b3a52"/><circle cx="6.5" cy="-2" r="2.3" fill="#5b3a52"/>
+    <ellipse cx="0" cy="3.5" rx="2.6" ry="2" fill="#5b3a52"/>
+    <path d="M-17,-20 l-8,-5 v10 z" fill="#ffe071"/><path d="M-17,-20 l8,-5 v10 z" fill="#ffe071"/>
+    <circle cx="-17" cy="-20" r="2.8" fill="#f0bf2c"/>
+  </g>
+  <g transform="translate(236,174) scale(0.56)">
+    <circle cx="-13" cy="-14" r="7.5" fill="#b9c8f2"/><circle cx="13" cy="-14" r="7.5" fill="#b9c8f2"/>
+    <circle cx="-13" cy="-14" r="3.6" fill="#e6ecff"/><circle cx="13" cy="-14" r="3.6" fill="#e6ecff"/>
+    <circle cx="0" cy="0" r="18" fill="#b9c8f2"/>
+    <ellipse cx="0" cy="6.5" rx="9.5" ry="7" fill="#e6ecff"/>
+    <circle cx="-6.5" cy="-2" r="2.3" fill="#5b3a52"/><circle cx="6.5" cy="-2" r="2.3" fill="#5b3a52"/>
+    <ellipse cx="0" cy="3.5" rx="2.6" ry="2" fill="#5b3a52"/>
+    <path d="M-17,-20 l-8,-5 v10 z" fill="#ffb37a"/><path d="M-17,-20 l8,-5 v10 z" fill="#ffb37a"/>
+    <circle cx="-17" cy="-20" r="2.8" fill="#f08c42"/>
+  </g>
+
+  <!-- plushies: mid pile -->
+  <g transform="translate(122,196) scale(0.7)">
+    <circle cx="-13" cy="-14" r="7.5" fill="#d8a06a"/><circle cx="13" cy="-14" r="7.5" fill="#d8a06a"/>
+    <circle cx="-13" cy="-14" r="3.6" fill="#f5dcc0"/><circle cx="13" cy="-14" r="3.6" fill="#f5dcc0"/>
+    <circle cx="0" cy="0" r="18" fill="#d8a06a"/>
+    <ellipse cx="0" cy="6.5" rx="9.5" ry="7" fill="#f5dcc0"/>
+    <circle cx="-6.5" cy="-2" r="2.3" fill="#5b3a52"/><circle cx="6.5" cy="-2" r="2.3" fill="#5b3a52"/>
+    <ellipse cx="0" cy="3.5" rx="2.6" ry="2" fill="#5b3a52"/>
+    <path d="M0,5.5 q-3,3.5 -6,0 M0,5.5 q3,3.5 6,0" stroke="#5b3a52" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+    <path d="M-17,-20 l-8,-5 v10 z" fill="#ff8a6b"/><path d="M-17,-20 l8,-5 v10 z" fill="#ff8a6b"/>
+    <circle cx="-17" cy="-20" r="2.8" fill="#e85c3c"/>
+  </g>
+  <g transform="translate(277,194) scale(0.7)">
+    <circle cx="-13" cy="-14" r="7.5" fill="#efe4d2"/><circle cx="13" cy="-14" r="7.5" fill="#efe4d2"/>
+    <circle cx="-13" cy="-14" r="3.6" fill="#fffaf0"/><circle cx="13" cy="-14" r="3.6" fill="#fffaf0"/>
+    <circle cx="0" cy="0" r="18" fill="#efe4d2"/>
+    <ellipse cx="0" cy="6.5" rx="9.5" ry="7" fill="#fffaf0"/>
+    <circle cx="-6.5" cy="-2" r="2.3" fill="#5b3a52"/><circle cx="6.5" cy="-2" r="2.3" fill="#5b3a52"/>
+    <ellipse cx="0" cy="3.5" rx="2.6" ry="2" fill="#5b3a52"/>
+    <path d="M0,5.5 q-3,3.5 -6,0 M0,5.5 q3,3.5 6,0" stroke="#5b3a52" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+    <!-- legendary crown -->
+    <path d="M-10,-25 l2,-9 l5,5 l3,-8 l3,8 l5,-5 l2,9 z" fill="#ffd447" stroke="#e8a417" stroke-width="1"/>
+    <path d="M-17,-19 l-8,-5 v10 z" fill="#ff4d6d"/><path d="M-17,-19 l8,-5 v10 z" fill="#ff4d6d"/>
+    <circle cx="-17" cy="-19" r="2.8" fill="#c81f45"/>
+  </g>
+
+  <!-- plushies: front row -->
+  <g transform="translate(148,192) scale(0.9)">
+    <circle cx="-13" cy="-14" r="7.5" fill="#f0c08a"/><circle cx="13" cy="-14" r="7.5" fill="#f0c08a"/>
+    <circle cx="-13" cy="-14" r="3.6" fill="#ffe6c8"/><circle cx="13" cy="-14" r="3.6" fill="#ffe6c8"/>
+    <circle cx="0" cy="0" r="18" fill="#f0c08a"/>
+    <ellipse cx="0" cy="6.5" rx="9.5" ry="7" fill="#ffe6c8"/>
+    <circle cx="-6.5" cy="-2" r="2.3" fill="#5b3a52"/><circle cx="6.5" cy="-2" r="2.3" fill="#5b3a52"/>
+    <ellipse cx="0" cy="3.5" rx="2.6" ry="2" fill="#5b3a52"/>
+    <path d="M0,5.5 q-3,3.5 -6,0 M0,5.5 q3,3.5 6,0" stroke="#5b3a52" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    <ellipse cx="-11" cy="4" rx="3.2" ry="2.2" fill="#ff9ec9" opacity="0.7"/>
+    <ellipse cx="11" cy="4" rx="3.2" ry="2.2" fill="#ff9ec9" opacity="0.7"/>
+    <path d="M-17,-20 l-8,-5 v10 z" fill="#ff87b8"/><path d="M-17,-20 l8,-5 v10 z" fill="#ff87b8"/>
+    <circle cx="-17" cy="-20" r="2.8" fill="#e4568f"/>
+  </g>
+  <g transform="translate(250,191) scale(0.88)">
+    <circle cx="-13" cy="-14" r="7.5" fill="#b98058"/><circle cx="13" cy="-14" r="7.5" fill="#b98058"/>
+    <circle cx="-13" cy="-14" r="3.6" fill="#e8c9ab"/><circle cx="13" cy="-14" r="3.6" fill="#e8c9ab"/>
+    <circle cx="0" cy="0" r="18" fill="#b98058"/>
+    <ellipse cx="0" cy="6.5" rx="9.5" ry="7" fill="#e8c9ab"/>
+    <circle cx="-6.5" cy="-2" r="2.3" fill="#5b3a52"/><circle cx="6.5" cy="-2" r="2.3" fill="#5b3a52"/>
+    <ellipse cx="0" cy="3.5" rx="2.6" ry="2" fill="#5b3a52"/>
+    <path d="M0,5.5 q-3,3.5 -6,0 M0,5.5 q3,3.5 6,0" stroke="#5b3a52" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    <ellipse cx="-11" cy="4" rx="3.2" ry="2.2" fill="#ff9ec9" opacity="0.55"/>
+    <ellipse cx="11" cy="4" rx="3.2" ry="2.2" fill="#ff9ec9" opacity="0.55"/>
+    <path d="M-17,-20 l-8,-5 v10 z" fill="#c9a4ff"/><path d="M-17,-20 l8,-5 v10 z" fill="#c9a4ff"/>
+    <circle cx="-17" cy="-20" r="2.8" fill="#9a6ded"/>
+  </g>
+
+  <!-- the star of the show, right under the claw -->
+  <g transform="translate(199,194) scale(0.96)">
+    <circle cx="-13" cy="-14" r="7.5" fill="#fff1e2" stroke="#f3ddc7" stroke-width="1"/>
+    <circle cx="13" cy="-14" r="7.5" fill="#fff1e2" stroke="#f3ddc7" stroke-width="1"/>
+    <circle cx="-13" cy="-14" r="3.6" fill="#ffd9ec"/><circle cx="13" cy="-14" r="3.6" fill="#ffd9ec"/>
+    <circle cx="0" cy="0" r="18" fill="#fff1e2" stroke="#f3ddc7" stroke-width="1"/>
+    <ellipse cx="0" cy="6.5" rx="9.5" ry="7" fill="#fffaf3"/>
+    <circle cx="-6.5" cy="-2" r="2.3" fill="#5b3a52"/><circle cx="6.5" cy="-2" r="2.3" fill="#5b3a52"/>
+    <ellipse cx="0" cy="3.5" rx="2.6" ry="2" fill="#5b3a52"/>
+    <path d="M0,5.5 q-3,3.5 -6,0 M0,5.5 q3,3.5 6,0" stroke="#5b3a52" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    <ellipse cx="-11" cy="4" rx="3.4" ry="2.4" fill="#ff9ec9" opacity="0.75"/>
+    <ellipse cx="11" cy="4" rx="3.4" ry="2.4" fill="#ff9ec9" opacity="0.75"/>
+    <path d="M-17,-20 l-8,-5 v10 z" fill="#7fe0c4"/><path d="M-17,-20 l8,-5 v10 z" fill="#7fe0c4"/>
+    <circle cx="-17" cy="-20" r="2.8" fill="#3fbfa0"/>
+  </g>
+
+  <!-- the claw -->
+  <g stroke="#e4568f" fill="none" stroke-linecap="round">
+    <path d="M112,106 h176" stroke-width="3" opacity="0.7"/>
+    <path d="M200,106 v40" stroke-width="2.5"/>
+    <path d="M200,148 q-11,9 -15,26 M200,148 q11,9 15,26" stroke-width="6"/>
+  </g>
+  <rect x="188" y="99" width="24" height="12" rx="4" fill="#e4568f"/>
+  <ellipse cx="200" cy="147" rx="14" ry="7" fill="#e4568f"/>
+  <ellipse cx="197" cy="145" rx="5" ry="2.2" fill="#ff9ec9" opacity="0.8"/>
+
+  <!-- glass reflections + frame -->
+  <rect x="106" y="102" width="34" height="112" rx="10" fill="#ffffff" opacity="0.3"/>
+  <rect x="148" y="102" width="12" height="112" rx="6" fill="#ffffff" opacity="0.18"/>
+  <rect x="100" y="96" width="200" height="126" rx="14" fill="none" stroke="#ffd9ec" stroke-width="6"/>
+
+  <!-- control base -->
+  <rect x="100" y="228" width="200" height="46" rx="12" fill="#ffd9ec"/>
+  <!-- joystick -->
+  <ellipse cx="134" cy="260" rx="16" ry="6" fill="#c9539a" opacity="0.4"/>
+  <rect x="131" y="243" width="6" height="16" rx="3" fill="#c9539a"/>
+  <circle cx="134" cy="243" r="11" fill="#ff4f92"/>
+  <circle cx="130.5" cy="239.5" r="3.5" fill="#ff9ec9" opacity="0.85"/>
+  <!-- DROP button -->
+  <circle cx="182" cy="254" r="14" fill="#c9539a" opacity="0.45"/>
+  <circle cx="182" cy="250" r="14" fill="#e0287f"/>
+  <circle cx="182" cy="248" r="14" fill="#ff5c9d"/>
+  <circle cx="177" cy="243" r="4.5" fill="#ffd0e8" opacity="0.9"/>
+  <!-- prize chute with a freshly won plushie -->
+  <rect x="216" y="236" width="72" height="32" rx="9" fill="#c9539a" opacity="0.35"/>
+  <rect x="219" y="239" width="66" height="26" rx="7" fill="#5b3a52" opacity="0.4"/>
+  <g clip-path="url(#chuteClip)">
+    <g transform="translate(252,256) scale(0.62)">
+      <circle cx="-13" cy="-14" r="7.5" fill="#ffd3d8"/><circle cx="13" cy="-14" r="7.5" fill="#ffd3d8"/>
+      <circle cx="-13" cy="-14" r="3.6" fill="#fff0f2"/><circle cx="13" cy="-14" r="3.6" fill="#fff0f2"/>
+      <circle cx="0" cy="0" r="18" fill="#ffd3d8"/>
+      <ellipse cx="0" cy="6.5" rx="9.5" ry="7" fill="#fff0f2"/>
+      <circle cx="-6.5" cy="-2" r="2.3" fill="#5b3a52"/><circle cx="6.5" cy="-2" r="2.3" fill="#5b3a52"/>
+      <ellipse cx="0" cy="3.5" rx="2.6" ry="2" fill="#5b3a52"/>
+      <path d="M0,5.5 q-3,3.5 -6,0 M0,5.5 q3,3.5 6,0" stroke="#5b3a52" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+  <!-- sparkle over the won prize -->
+  <path d="M232,242 Q232,248 226,248 Q232,248 232,254 Q232,248 238,248 Q232,248 232,242 Z" fill="#ffd447"/>
+  <path d="M276,240 Q276,244 272,244 Q276,244 276,248 Q276,244 280,244 Q276,244 276,240 Z" fill="#fff6bd"/>
+
+  <!-- foreground sparkle on the glass -->
+  <path d="M282,116 Q282,125 273,125 Q282,125 282,134 Q282,125 291,125 Q282,125 282,116 Z" fill="#ffffff" opacity="0.9"/>
+</svg>
