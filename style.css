@@ -193,6 +193,13 @@ footer {
 }
 
 .insert-coin {
+  display: block;
+  margin: 0 auto 1.5rem;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  font-family: var(--font-pixel);
+  cursor: pointer;
   font-size: clamp(0.7rem, 2.5vw, 1rem);
   color: var(--neon-pink);
   text-shadow:
@@ -202,7 +209,13 @@ footer {
   animation: blink 1.2s step-end infinite;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
+}
+
+.insert-coin:hover,
+.insert-coin:focus-visible {
+  animation: none;
+  outline: none;
+  color: var(--neon-yellow);
 }
 
 @keyframes blink {
