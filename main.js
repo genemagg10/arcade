@@ -75,4 +75,15 @@ function renderGallery() {
     .join("");
 }
 
-document.addEventListener("DOMContentLoaded", renderGallery);
+// ---- Press Start: launch a random game ----
+
+function playRandomGame() {
+  const game = games[Math.floor(Math.random() * games.length)];
+  window.open(game.url, "_blank", "noopener,noreferrer");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  renderGallery();
+  const pressStart = document.getElementById("press-start");
+  if (pressStart) pressStart.addEventListener("click", playRandomGame);
+});
