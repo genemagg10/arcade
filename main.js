@@ -27,6 +27,12 @@ const games = [
     image: "./assets/claw-machine-cuties-thumb.svg",
   },
   {
+    title: "Star Wars Adventure",
+    creator: "Jordan",
+    url: "https://genemagg10.github.io/star-wars-adventure/",
+    image: "./assets/star-wars-adventure-thumb.svg",
+  },
+  {
     title: "FrostByte",
     creator: "Gene",
     url: "https://genemagg10.github.io/frostbyte/",
