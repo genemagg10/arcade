@@ -50,6 +50,12 @@ const games = [
     url: "https://genemagg10.github.io/pelada-legends/",
     image: "./assets/pelada-legends-thumb.svg",
   },
+  {
+    title: "Downscale",
+    creator: "Gene",
+    url: "https://genemagg10.github.io/downscale/",
+    image: "./assets/downscale.png",
+  },
 ];
 
 // ---- Renderer ----
