@@ -56,6 +56,12 @@ const games = [
     url: "https://genemagg10.github.io/downscale/",
     image: "./assets/downscale.png",
   },
+  {
+    title: "Lafayette Days",
+    creator: "Gene",
+    url: "https://genemagg10.github.io/lafayette-game/",
+    image: "./assets/lafayette-days.png",
+  },
 ];
 
 // ---- Renderer ----
